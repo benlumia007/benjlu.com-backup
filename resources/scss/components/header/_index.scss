@@ -182,5 +182,33 @@
 				}
 			}
 		}
+
+		&.header-image {
+			background: url( ../../../../assets/images/custom-image.jpg );
+			box-sizing: border-box;
+			padding: 9rem 0;
+	
+			.site-branding {
+				text-align: center;
+	
+				.site-title {
+					font-size: 3rem;
+					margin: 0;
+					padding: 0;
+	
+					a {
+						border-bottom: none;
+						color: color( white );
+						text-decoration: none;
+					}
+				}
+	
+				.site-description {
+					color: color( white );
+					margin: 0;
+					padding: 0;
+				}
+			}
+		}
 	}
 }

@@ -221,6 +221,29 @@ h6 {
     margin: 0;
     padding: 0;
   }
+  .site-header.header-image {
+    background: url(../../../../assets/images/custom-image.jpg);
+    box-sizing: border-box;
+    padding: 9rem 0;
+  }
+  .site-header.header-image .site-branding {
+    text-align: center;
+  }
+  .site-header.header-image .site-branding .site-title {
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+  }
+  .site-header.header-image .site-branding .site-title a {
+    border-bottom: none;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .site-header.header-image .site-branding .site-description {
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
 }
 @media screen and (max-width: 480px) {
   .menu-primary {

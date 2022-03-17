@@ -29,7 +29,7 @@
                 @endforeach
             </ul>
         </nav>
-        <header id="masthead" class="site-header">
+        <header id="masthead" class="site-header header-image">
             <div class="site-branding">
                 <h1 class="site-title"><a href="/">{{ $page->siteTitle }}</a></h1>
                 <span class="site-description">{{ $page->siteTagline }}</span>
