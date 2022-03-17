@@ -19,4 +19,12 @@ return [
             'title' => 'Portfolio'
         ],
     ],
+
+    // add custom collections.
+    'collections' => [
+        'portfolios' => [
+            'path' => 'portfolio/{-title}',
+            'sort' => '-date',
+        ],
+    ],
 ];
