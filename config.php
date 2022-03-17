@@ -10,5 +10,13 @@ return [
     'siteTitle' => 'Benjamin Lu',
 
     // a custom tagline for the site.
-    'siteTagline' => 'Frontend & Backend Developer'
+    'siteTagline' => 'PHP Developer',
+
+    // a custom primary menu for the site.
+    'primaryMenu' => [
+        [
+            'link' => '/portfolio',
+            'title' => 'Portfolio'
+        ],
+    ],
 ];
