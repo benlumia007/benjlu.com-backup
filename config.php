@@ -24,6 +24,7 @@ return [
     'collections' => [
         'portfolios' => [
             'path' => 'portfolio/{-title}',
+            'extends' => '_types.portfolio',
             'sort' => '-date',
         ],
     ],
