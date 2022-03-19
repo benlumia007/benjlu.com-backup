@@ -1,0 +1,13 @@
+{
+	"name"        : "blush-dev/blush",
+	"autoload"    : {
+		"psr-4" : {
+			"App\\" : "app"
+		}
+	},
+	"require": {
+		"blush-dev/framework": "*"
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
+}
