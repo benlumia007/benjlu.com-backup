@@ -1,6 +1,0 @@
-build_local
-node_modules
-vendor
-
-composer.lock
-package-lock.json
