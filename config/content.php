@@ -22,6 +22,6 @@ return [
 	],
 	'portfolio' => [
 		'path' => 'portfolio',
-		'collections' => [ 'order' => 'desc' ]
+		'collection' => [ 'order' => 'desc', 'number' => 9 ]
 	]
 ];
