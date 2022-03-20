@@ -6,7 +6,7 @@
 		},
         "files": [
 			"app/functions-helpers.php",
-            "app/framework.php"
+			"app/framework.php"
         ]
 	},
 	"require": {
