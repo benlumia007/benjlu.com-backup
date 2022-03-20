@@ -1,0 +1,30 @@
+.site-header {
+    &.header-image {
+        background: url( ../../../../../public/images/custom-image.jpg );
+        background-size: cover !important;
+        box-sizing: border-box;
+        padding: 10rem 0;
+
+        .site-branding {
+            text-align: center;
+
+            .site-title {
+                font-size: 3rem;
+                margin: 0;
+                padding: 0;
+
+                a {
+                    border-bottom: none;
+                    color: color( white );
+                    text-decoration: none;
+                }
+            }
+
+            .site-description {
+                color: color( white );
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}
