@@ -9,23 +9,11 @@ return [
 	'title' => 'Benjamin Lu',
 
 	// Custom description/tagline for the site.
-	'description' => 'PHP Developer',
+	'tagline' => 'PHP Developer',
 
 	// Select from a list of supported timezones:
 	// https://www.php.net/manual/en/timezones.php
 	'timezone' => 'America/Los_Angeles',
-
-	// Custom primary menu for the site.
-	'primary' => [
-		[
-			'link' => '/about',
-			'title' => 'About'
-		],
-		[
-			'link' => '/portfolio',
-			'title' => 'Portfolio'
-		]
-	],
 
 	// Set the homepage to show a custom content type collection. This
 	// should be the content type name/type (e.g., `post`) set in the
@@ -35,7 +23,8 @@ return [
 
 	// Register service providers.
 	'providers' => [
-		App\Mix\Provider::class
+		App\Config\Provider::class,
+		App\Mix\Provider::class,
 	],
 
 	// Register static proxies classes.
