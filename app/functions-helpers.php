@@ -1,6 +1,7 @@
 <?php 
-if ( ! function_exists( 'assets' ) ) {
-    function assets( $path ) {
+if ( ! function_exists( 'mix' ) ) {
+    function mix( $path ) {
+        
         // Get the Laravel Mix manifest.
         $manifest = \Blush\App::resolve( 'mix' );
     
