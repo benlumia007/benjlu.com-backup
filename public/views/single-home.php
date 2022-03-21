@@ -49,9 +49,11 @@
                     <?php $posts = Blush\Query::make([ 'type' => 'post', 'number' => 2 ] ); ?>
                     <?php foreach ( $posts as $post ) : ?>
                         <li>
-                            <figure class="post-thumbnail">
-                                <img src="<?= $post->metaSingle( 'thumbnail' ); ?>" />
-                            </figure>
+                            <?php if ( $post->metaSingle( 'thumbnail' ) ) { ?>
+                                <figure class="post-thumbnail">
+                                    <img src="<?= $post->metaSingle( 'thumbnail' ); ?>" />
+                                </figure>
+                            <?php } ?>
                             <header class="entry-header">
                                 <h1 class="entry-title"><a href="<?= $post->uri(); ?>"><?= $post->title(); ?></a></h1>
                             </header>
