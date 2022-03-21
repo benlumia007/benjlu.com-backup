@@ -4,6 +4,6 @@ if [[ ! -f "/home/benjlu/public_html/.env" ]]; then
     cp -r "/home/benjlu/actions-runner/benjlu/benjlu.com/benjlu.com/benjlu/.env.example" "/home/benjlu/public_html/.env"
 
     if grep -q "http://localhost" "/home/benjlu/public_html/.env"; then
-        sudo sed -i -e "s/http://localhost/https://benjlu.com/g" "/home/benjlu/public_html/.env"
+        sed -i -e "s/http://localhost/https://benjlu.com/g" "/home/benjlu/public_html/.env"
     fi
 fi
