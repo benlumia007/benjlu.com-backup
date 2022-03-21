@@ -1,0 +1,45 @@
+@media screen and ( max-width: 480px ) {
+    .site-portfolio {
+        background: color( white );
+
+        .content-area {
+            .portfolio {
+                line-height: 1.8rem;
+                padding: 1.125rem;
+    
+                .entry-header {
+                    text-align: center;
+                    
+                    .entry-title {
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+
+                .entry-content {
+                    ul {
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        grid-gap: 1.125rem;
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+
+                        li {
+                            .caption {
+                                background: #eeeeee;
+                                padding: 0.5rem;
+                                text-align: center;
+
+                                .caption-text {
+                                    margin: 0;
+                                    padding: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
