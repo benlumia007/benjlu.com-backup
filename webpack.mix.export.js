@@ -22,12 +22,14 @@ let exportPath = 'benjlu';
 
 // Theme root-level files to include.
 let files = [
+	'.env.example',
 	'index.php',
 ];
 
 // Folders to include.
 let folders = [
 	'app',
+	'config',
 	'public',
 	'user',
 	'vendor'
