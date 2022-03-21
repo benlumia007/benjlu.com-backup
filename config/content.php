@@ -1,4 +1,3 @@
-
 <?php
 # Custom content types configuration.
 #
@@ -8,11 +7,25 @@
 #       'term_collect' => string  // content type for taxonomy terms to collect
 # ]
 
+use App\Controllers\SinglePost;
+use App\Controllers\ArchivePost;
+
 return [
 	// Create custom content type and taxonomy for blog posts.
 	'post' => [
-		'path'       => 'blog',
-		'collection' => [ 'order' => 'desc' ]
+		'path'       => '_posts',
+		'collection' => [ 'order' => 'desc' ],
+		'uri'        => 'archives',
+		'uri_single' => 'archives/{year}/{month}/{day}/{name}',
+		'routes'     => [
+			'archives/{year}/{month}/{day}/{name}'      => SinglePost::class,
+			'archives/{year}/{month}/{day}/page/{page}' => ArchivePost::class,
+			'archives/{year}/{month}/{day}'             => ArchivePost::class,
+			'archives/{year}/{month}/page/{page}'       => ArchivePost::class,
+			'archives/{year}/{month}'                   => ArchivePost::class,
+			'archives/{year}/page/{page}'               => ArchivePost::class,
+			'archives/{year}'                           => ArchivePost::class,
+		]
 	],
 	'tag' => [
 		'path'            => 'blog/tags',
