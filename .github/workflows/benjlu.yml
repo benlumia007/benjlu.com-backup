@@ -28,3 +28,6 @@ jobs:
 
       - name: step five
         run: npm run build
+
+      - name: step six
+        run: rsync -r benjlu/* ~/public_html
