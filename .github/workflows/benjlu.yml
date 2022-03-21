@@ -31,3 +31,9 @@ jobs:
 
       - name: step six
         run: rsync -r benjlu/* ~/public_html
+
+      - name: step seven
+        run: |
+          if [[ ! -f "~/public_html/.env" ]]; then
+            cp -r "benjlu/.env.example" "~/public_html/.env"
+          fi
