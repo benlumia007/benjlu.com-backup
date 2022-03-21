@@ -33,4 +33,4 @@ jobs:
         run: rsync -r benjlu/* ~/public_html
 
       - name: step seven
-        run: bash env.sh
+        run: bash /home/benjlu/env.sh

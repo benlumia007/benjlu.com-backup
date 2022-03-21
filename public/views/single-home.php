@@ -27,8 +27,8 @@
                                 <img src="<?= $portfolio->metaSingle( 'thumbnail' ); ?>" />
                             </figure>
                             <div class="caption">
-                                <h3 class="caption-text"><?= $portfolio->title(); ?></h3>
-                                <span class="caption-description"><?= $portfolio->metaSingle( 'caption' ); ?></span>
+                                <h3 class="caption-text"><a href="<?= $portfolio->uri(); ?>"><?= $portfolio->title(); ?></a></h3>
+                                <span class="caption-description"><?= $portfolio->metaSingle( 'type' ); ?></span>
                             </div>
                         </li>
                     <?php endforeach; ?>
