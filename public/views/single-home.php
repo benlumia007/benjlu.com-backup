@@ -20,7 +20,7 @@
             </header>
             <div class="entry-content">
                 <ul>
-                    <?php $portfolios = Blush\Query::make([ 'type' => 'portfolio', 'number' => 9 ] ); ?>
+                    <?php $portfolios = Blush\Query::make([ 'type' => 'portfolio', 'number' => 9, 'order' => 'desc' ] ); ?>
                     <?php foreach ( $portfolios as $portfolio ) : ?>
                         <li>
                             <figure class="post-thumbnail">

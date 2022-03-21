@@ -1,0 +1,30 @@
+name: benjlu
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - name: step one
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.BENJLU_PRIVATE_KEY }}
+
+      - name: step two
+        uses: actions/checkout@v2
+        with:
+          ssh-key: ${{ secrets.BENJLU_PRIVATE_KEY }}
+          submodules: 'recursive'
+
+      - name: step three
+        run: composer install
+
+      - name: step four
+        run: npm install
+
+      - name: step five
+        run: npm run build

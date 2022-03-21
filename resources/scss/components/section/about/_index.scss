@@ -24,3 +24,32 @@
         }
     }
 }
+
+@media screen and ( min-width: 1171px ) {
+    .site-about {
+        .content-area {
+            margin: 1.125rem auto;
+            max-width: 1170px;
+            
+            .about {
+                line-height: 1.8rem;
+                padding: 1.125rem;
+    
+                .entry-header {
+                    text-align: center;
+                    
+                    .entry-title {
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+
+                .entry-content {
+                    .alignleft {
+                        margin-bottom: 1.125rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -27,7 +27,6 @@ let files = [
 
 // Folders to include.
 let folders = [
-	'_data',
 	'app',
 	'public',
 	'user',

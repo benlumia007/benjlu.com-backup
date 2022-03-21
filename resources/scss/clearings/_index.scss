@@ -1,4 +1,6 @@
-.site-content {
+.site-content,
+.site-about,
+.site-portfolio {
     &:before,
     &:after {
         clear: both;
