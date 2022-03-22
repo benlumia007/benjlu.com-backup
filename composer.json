@@ -10,7 +10,7 @@
         ]
 	},
 	"require": {
-		"blush-dev/framework": "*"
+		"blush-dev/framework": "dev-master"
 	},
 	"minimum-stability": "dev",
 	"prefer-stable": true
