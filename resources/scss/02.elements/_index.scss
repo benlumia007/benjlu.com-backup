@@ -7,13 +7,10 @@
 /// which gets more specific as we drill down each layer.  This keeps your
 /// style code lean and organized.
 ///
-/// @group  Styles
+/// @group  Elements
 /// @author Benjamin Lu <benlumia007@gmail.com>
 /// @link   https://github.com/benlumia007/benjlu.com
 ////
 
-@import '01.settings/index';
-@import '02.elements/index';
-// @import 'layouts/index';
-@import '04.components/index';
-// @import 'utilities/index';
+@import 'defaults/index';
+@import 'headings/index';
