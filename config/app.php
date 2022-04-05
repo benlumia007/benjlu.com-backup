@@ -9,7 +9,7 @@ return [
 	'title' => 'Benjamin Lu',
 
 	// Custom description/tagline for the site.
-	'tagline' => 'PHP Developer',
+	'tagline' => '',
 
 	// Select from a list of supported timezones:
 	// https://www.php.net/manual/en/timezones.php
