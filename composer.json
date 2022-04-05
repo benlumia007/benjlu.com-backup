@@ -1,0 +1,17 @@
+{
+	"name": "benlumia007/benjlu.com",
+	"autoload"    : {
+		"psr-4" : {
+			"App\\" : "app"
+		},
+        "files": [
+			"app/functions-helpers.php",
+			"app/framework.php"
+        ]
+	},
+	"require": {
+		"blush-dev/framework": "dev-master"
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
+}

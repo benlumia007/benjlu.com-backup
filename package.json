@@ -1,0 +1,13 @@
+{
+    "scripts": {
+		"build": "npm run prod && npm run export",
+		"watch": "mix watch",
+		"prod": "mix --production",
+		"export": "mix --mix-config=webpack.mix.export.js"
+	},
+	"devDependencies": {
+		"laravel-mix": "^6.0.25",
+		"sass": "^1.35.2",
+		"sass-loader": "^12.1.0"
+	}
+}
