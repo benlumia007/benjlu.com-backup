@@ -1,7 +1,0 @@
-node_modules
-public/assets
-vendor
-
-.env*
-!.env.example
-public/mix-manifest.json
